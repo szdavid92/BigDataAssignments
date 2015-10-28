@@ -38,7 +38,7 @@ from temp_f2008;
 
 This should take a while. Once again, we can check if it worked.
 
-The only thing left to do is group the count the departure times in each of the airports:
+The only thing left to do is to count the departure times in each of the airports:
 ```sql
 select count(deptime) as count, Origin from departures group by Origin sort by count desc;
 ```
